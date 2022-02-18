@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<head>
+	<title>地图</title>
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@the-map.netlify.app" />
+    <meta name="twitter:title" content="地图,老司机专用地图,全球楼凤信息", />
+    <meta name="twitter:image" content="https://the-map.netlify.app/static/img/twitterbanner.jpg"/>
+    <meta property="og:image" content="https://the-map.netlify.app/static/img/facebookbanner.jpg"/>
+    <meta charset="utf-8">
+    <link rel="icon"  href="../static/img/favicon.ico" sizes="23x23" type="image/x-icon" >
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <noscript><p><font size="5" face="arial" color="red">此网页需要Javascipt以运行<br>You should enable Javascript to work with this page.</font></p></noscript>
+	<meta content="telephone=no" name="format-detection">
+	<meta name="robots" content="noarchive">
+	<link rel="icon"  href="static/img/favicon.ico" sizes="23x23" type="image/x-icon" >
+	<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+
+<script type="text/javascript">
+$().ready(function(){
+
+	$(".btn_android").click(function(){
+
+		location.href = "maps";
+
+	});
+
+	$(".btn_wxmap").click(function(){
+
+		location.href = "develop";
+
+	});
+
+});
+</script>
+</head>
+<body class="bg">
+<div class="container text-center">
+	<br><br><br>
+	<!---<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"      hidden="true"      src="static/audio/Theme-From-San-Andreas.mp3">      你的浏览器不支持audio标签</audio>
+	--->
+	<p class="name">地图</p>
+	<p class="maxword">副标题</p>
+	<p>交流方式<br>Telegram<a href="https://1.1.1.1"> Link</a><br><small>(暂不开放)</small></p>
+	<br><br>
+	<button type="button" class="btn btn-danger btn-lg btn_android"><span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;进入地图</button><br><br>
+	<button type="button" class="btn btn-success btn-lg btn_wxmap"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;开发相关</button><br>
+	<br><br><br>
+	<p class="word">
+		本站是一款共享型地图。免责声明：以此主题增加趣味性，请务必在合理范围内使用，若有任何其它事件，都与本项目无关。<br>
+	</p>
+	<br><br><br>
+	<p class="word">
+		<strong class="maxword">用户须知</strong><br><br>
+		<br><br>
+		1、内容信息真实程度务必自己分析。<br>
+	</p>
+	<p class="word">
+		2、若参与维护地图信息，确保信息真实、可靠，需要齐心协力，感谢大家慷慨捧场、支持，万分感谢！<br>
+	</p>
+	<br><br><br>
+	<br><br>
+</div>
+<br><br><br>
+<p class="text-center" style="border-top: 1px solid #bbbbbb;">
+    <br><small class="btn_web">Copyright 2021</small>
+</p>
+<br><br>
+</body>
+</html>
+<!-- message alert -->
+<script type="text/javascript">
+function showMsg(title,message,url) {
+
+	$(".dlg_msg .title").html(title);
+	$(".dlg_msg .message").html(message);
+
+	$(".dlg_msg .url").text(url);
+
+	$(".dlg_msg").modal("show");
+
+}
+
+$().ready(function(){
+
+	$(".dlg_msg .btn_ok").click(function(){
+
+		$(".dlg_msg").modal("hide");
+
+		var url = $(".dlg_msg .url").text();
+
+		if (url.length>0) { location.href = url; }
+
+	});
+
+});	
+</script>
+<div class="modal fade dlg_msg">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;<span class="title">提示</span></h4>
+			</div>
+			<div class="modal-body">
+				<p class="message"></p>
+				<p class="url hidden"></p>
+				<div class="text-right">
+					<button type="button" class="btn btn-primary btn_ok"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$().ready(function(){
+
+	$(".float .l .ico_0").click(function(){
+
+		$(".dlg_share").modal("show");
+
+	});
+
+	$(".float .l .ico_1").click(function(){
+
+		$(".dlg_youtube").modal("show");
+
+	});
+
+	$(".float .l .ico_2").click(function(){
+
+		$(".dlg_service").modal("show");
+
+	});
+
+});
+</script>
+<div class="float">
+	<div class="l">
+		<div class="ico_0"></div>
+		<div class="ico_1"></div>
+		<div class="ico_2"></div>
+	</div>
+</div>
+<div class="modal fade dlg_share">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h5 class="modal-title text-muted"><span class="glyphicon glyphicon-star-empty"></span>&nbsp;&nbsp;分享本站</h5>
+			</div>
+			<div class="modal-body">
+				<!---<img src="/?a=json&cmd=share.home.qrcode" style="width: 100%;margin: 6px auto;">--->
+				<p class="text-muted text-center"><small>不用了</small></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade dlg_youtube">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h5 class="modal-title text-muted"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;YouTube</h5>
+			</div>
+			<div class="modal-body">
+				<p class="text-muted text-center"><small>你来晚了</small></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade dlg_service">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h5 class="modal-title text-muted"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;在线客服</h5>
+			</div>
+			<div class="modal-body text-muted text-center">
+				<small class="">
+				这还要客服？<br>
+				<!---<img src="./Love/Tpl/Index/img/service.jpg" style="width: 100%;margin: 6px auto;">--->
+				</small>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
